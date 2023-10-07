@@ -20,7 +20,7 @@ export async function createProductHandler(
 
   const product = await createProduct({ ...body, user: userId });
 
-  return res.send(product);
+  return res.status(201).send(product);
 }
 
 export async function updateProductHandler(
