@@ -4,6 +4,7 @@ dotenv.config();
 
 export default {
   port: process.env.PORT || 1337,
+  origin: process.env.ORIGIN || "http://localhost:3000",
   dbUri: process.env.DB_URI || "mongodb://localhost:27017/rest-api-tutorial",
   logLevel: process.env.LOG_LEVEL || "info",
   saltWorkFactor: 10,
