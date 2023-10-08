@@ -6,6 +6,7 @@ export interface UserInput {
   email: string;
   name: string;
   password: string;
+  picture?: string;
 }
 
 export interface UserDocument extends UserInput, mongoose.Document {
@@ -18,6 +19,7 @@ const userSchema = new mongoose.Schema(
   {
     email: { type: String, required: true, unique: true },
     name: { type: String, required: true },
+    picture: { type: String },
     password: { type: String, required: true },
   },
   {

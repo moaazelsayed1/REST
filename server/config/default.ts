@@ -16,4 +16,7 @@ export default {
   refreshTokenPublicKey: process.env.REFRESH_TOKEN_PUBLIC_KEY,
   accessTokenTtl: "15m",
   refreshTokenTtl: "1y",
+  googleClientId: process.env.GOOGLE_CLIENT_ID,
+  googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+  googleOauthRedirectUrl: process.env.GOOGLE_OAUTH_REDIRECT_URI,
 };
